@@ -2,7 +2,7 @@
   <head>
     <title>Welcome to Cloud convo September Set</title>
   </head>
-  <body bgcolor="#7FFF00">
+  <body bgcolor="#FF0000">
     <h1>Hello >Welcome to Cloud convo September Set</h1>
     <!--Form declaration. Must have an action attribute -->
         <form action="C:/JonnyJava/FirstJava.html/profile.html" method="post">
