@@ -29,9 +29,8 @@ pipeline {
         }
         stage('push to nexus') {
             steps {
-               nexusArtifactUploader artifacts: [[artifactId: 'SampleWebApp', classifier: '', file: 'SampleWebApp/target/SampleWebApp.war', type: 'war']], credentialsId: 'Nexus_pass', groupId: 'SampleWebApp', nexusUrl: 'ec2-52-207-25-187.compute-1.amazonaws.com:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'maven-snapshots', version: '1.0.0.0-SNAPHOTS'
-            }   
-            
+               nexusArtifactUploader artifacts: [[artifactId: 'SampleWebApp', classifier: '', file: 'SampleWebApp/target/SampleWebApp.war', type: 'war']], credentialsId: '83bb214b-fd81-4ce3-a730-5d706e969261', groupId: 'SampleWebApp', nexusUrl: 'ec2-52-207-25-187.compute-1.amazonaws.com:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'maven-snapshots', version: '1.0.0 SNAPSHOT'
+            }
         }
         stage('deploy to tomcat') {
           steps {
